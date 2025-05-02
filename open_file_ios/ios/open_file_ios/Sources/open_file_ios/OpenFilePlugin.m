@@ -94,7 +94,7 @@ static NSString *const CHANNEL_NAME = @"open_file";
 }
 
 - (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller {
-    return [UIApplication sharedApplication].delegate.window.rootViewController;
+    return [UIApplication sharedApplication].delegate.window.rootViewController.presentedViewController;
 }
 
 - (BOOL) isBlankString:(NSString *)string {
